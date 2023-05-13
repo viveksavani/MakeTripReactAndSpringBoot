@@ -28,6 +28,9 @@ function HeaderComponent() {
                         {userloggedIn && <Link className="nav-link" to="/flights">Flights Details</Link>}
                         </li>
                         <li className="nav-item">
+                        <Link className="nav-link" to="/flightbook">Flights Booking</Link>
+                        </li>
+                        <li className="nav-item">
                        {!userloggedIn && <Link className="nav-link" to="/signup">Singup</Link>}
                         </li>
                         <li className="nav-item">

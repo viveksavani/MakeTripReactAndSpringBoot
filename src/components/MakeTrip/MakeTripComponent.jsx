@@ -10,6 +10,7 @@ import withParams from "../withparamsnavigation/WithParams"
 import AuthenticatedRoute from "../AuthenticateRoute/AuthenticatedRoute"
 import FlightComponent from "../flights/FlightComponent"
 import FooterComponent from "../footer/FooterComponent"
+import FlightBooking from "../flights/FlightBooking"
 
 function MakeTripComponent() {
 
@@ -29,6 +30,7 @@ function MakeTripComponent() {
                     <Route path="/" element={<SingupComponent />} />
                     <Route path="/signup" element={<SingupComponent />} />
                     <Route path="/signin" element={<SigninComponentWithNavigation />} />
+                    <Route path="/flightbook" element={<FlightBooking />} />
                     <Route path="/flights" element={
                         <AuthenticatedRoute>
                             <FlightComponent />
